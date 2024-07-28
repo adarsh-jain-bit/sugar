@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sugar-reward</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/sugarreward.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</head>
+
+<body>
+  <!-- bottom-nav -->
+  <div id="bottomnav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+
+          <div class="nav d-md-none">
+            <a href="/index.html" target="_blank" class="nav__link"> <i class="fa-solid fa-home pb-1"></i>Home</a>
+            <a href="#" class="nav__link"> <i class="fa-solid fa-grip  pb-1"></i>Categories</a>
+            <a href="/sugar.cart.html" target="_blank" class="nav__link"> <i
+                class="fa-solid fa-shopping-cart pb-1"></i>Cart</a>
+            <a href="/sugarform.html" target="_blank" class="nav__link"> <i
+                class="fa-regular fa-user  pb-1"></i>Account</a>
+            <a href="/sugarreward.html" class="nav__link"> <i class="fa-solid fa-gift  pb-1"></i>Rewards</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <div class="nav-fix">
+    <nav class="nav1 ">
+
+      <div class="navbar px-3">
+
+        <div class="logo d-md-flex justify-between align-items-center w-50 gap-4">
+          <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="fa-solid fa-bars-staggered text-white"></span>
+          </button>
+          <img src="/sugar-img/SUGAR-Cosmetics-logo.png" class="logo1" height="70px" alt="">
+          <div class="inputfield ">
+            <div class="input-group  d-md-flex d-none">
+              <input type="text" class="form-control inputbox" placeholder="Try 'liquid lipstick'" id="search">
+              <span class="input-group-text bg-white"><i class="fa-solid fa-magnifying-glass"></i>Search</span>
+            </div>
+          </div>
+        </div>
+        <div class="login text-white fs-5  d-md-flex d-none">
+          <a class=" mb-0 text-white text-decoration-none" href="/sugarform.html" target="_blank"><i
+              class="fa-solid fa-user border-white border rounded-circle p-2 me-2"></i>login/Register</a>
+        </div>
+        <div class="icon">
+          <p class="text-white mb-0 ">
+            <a class="fa-regular fa-heart  fs-4 me-2 text-white text-decoration-none"></a>
+            <a class="fa-solid fa-cart-plus  fs-4 me-2 text-white text-decoration-none" href="/sugar.cart.html"></a>
+            <a class="fa-solid fa-percent text-dark percent text-decoration-none " href="/sugarreward.html"></a><i
+              class="fa-solid fs-4 fa-certificate certificate"></i>
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md nav2 p-0 p-md-2">
+      <div class="container-fluid">
+
+
+        <div class="offcanvas offcanvas-start text-bg-dark w-50" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title logo" id="offcanvasDarkNavbarLabel"><img
+                src="/sugar-img/SUGAR-Cosmetics-logo.png" height="70px" alt=""></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+         <ul class="navbar-nav gap-lg-4 text-uppercase  gap-3 ps-4">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Lips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Eye</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Face</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SkinCare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> New Launches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bestseller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Blogs</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- ----offer---- -->
+  <div class="container-fluid" id="offer-bg">
+    <div class="row p-0 justify-content-center">
+      <div class="col-12 text-center mt-5">
+        <h3 class="text-dark"><i class="fa-solid fa-minus text-danger me-2"></i>OFFER<i
+            class="fa-solid fa-minus text-danger ms-2"></i></h3>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/image.gif" class="card-img-top" alt="...">
+            <div class="card-body text-end">
+              <div class="border-dash  justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">OFFER876</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/offer-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">WINGET</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/offer-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">W23498</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/offer-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">CLAIM99</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-md-4 g-4 pb-5">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/offer-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-end">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">OFFER876</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/offer-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">WINGET</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/offer-6.jpg" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">W23498</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/sugar-img/image.gif" class="card-img-top" alt="...">
+            <div class="card-body ">
+              <div class="border-dash   justify-content-sm-end justify-content-center d-flex">
+                <p class="mb-0">CLAIM99</p><span><i class="fa-solid fa-tags text-secondary"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- stay touch -->
+  <div class="container-fluid pb-5" id="staytouch">
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <h3 class="text-dark"><i class="fa-solid fa-minus text-danger me-2"></i>LET’S STAY IN TOUCH<i
+            class="fa-solid fa-minus text-danger ms-2"></i></h3>
+        <p class="text-secondary fw-semibold px-5">Get the latest beauty tips straight to your inbox. Can’t wait to
+          connect!</p>
+
+      </div>
+      <div class="col-md-6 offset-md-3 col-8 m-auto">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Your Email" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <span class="input-group-text btn-color text-white" id="basic-addon2">Subscribe</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact">
+    <div class="container-fluid" style="background-color: black;">
+      <div class="row">
+        <div class="col text-center">
+          <img src="/sugar-img/SUGAR-Cosmetics-logo.png" height="100px" alt="">
+          <p class="social-icon ">
+            <i class="fa-brands fa-facebook  me-3 "></i>
+            <i class="fa-brands fa-instagram  me-3"></i>
+            <i class="fa-brands fa-twitter  me-3"></i>
+            <i class="fa-brands fa-whatsapp  me-3"></i>
+            <i class="fa-brands fa-linkedin me-3 "></i>
+            <i class="fa-brands fa-youtube "></i>
+          </p>
+        </div>
+        <hr style="color: white; width: 90%; margin: auto; height: 3px; background-color: white;">
+        <div class="col-md-8 offset-md-2  py-3">
+          <div class="click-links d-flex justify-content-between flex-column flex-md-row text-center">
+            <a href="" class="text-decoration-none text-white  mb-2 mb-">Stores</a>
+            <a href="" class="text-decoration-none text-white mb-2 mb-">FAQ</a>
+            <a href="" class="text-decoration-none text-white mb-2 mb-">Terms & Conditions</a>
+            <a href="" class="text-decoration-none text-white mb-2 mb-">Returns</a>
+            <a href="" class="text-decoration-none text-white">About Us</a>
+          </div>
+        </div>
+        <hr style="color: white; width: 90%; margin: auto; height: 3px; background-color: white;">
+        <div class="col-md-10 offset-md-1 text-md-start text-center text-white my-3 ">
+          <h4 class="text-uppercase">Get In Touch</h4>
+        </div>
+        <div class="col-lg-10 offset-lg-1 text-center">
+          <div class="row d-flex justify-content-between text-white gy-4 gy-md-0">
+            <div class="contact-des col-lg-2 col-md-4 col-sm-6">
+              <h5> Call us at</h5>
+              <p class="text-secondary">
+                1800-209-9933 <br>
+                Monday to Friday : 9 AM to 7 PM
+              </p>
+            </div>
+            <div class="contact-des col-lg-2 col-md-4  col-sm-6">
+              <h5> Support</h5>
+              <p class="text-secondary">
+                hello@sugarcosmetics.com
+              </p>
+            </div>
+            <div class="contact-des col-lg-2 col-md-4  col-sm-6">
+              <h5> Careers</h5>
+              <p class="text-secondary">
+                We're hiring!
+              </p>
+            </div>
+            <div class="contact-des col-lg-2 col-md-4  col-sm-6 ">
+              <h5> Press & Media</h5>
+              <p class="text-secondary">
+                pr@sugarcosmetics.com
+              </p>
+
+            </div>
+            <div class="contact-des col-lg-2 col-md-4">
+              <h5> Influencer Collab</h5>
+              <p class="text-secondary">
+                Join Us
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr style="color: white; width: 90%; margin: auto; height: 3px; background-color: white;">
+        <div class="col-md-5 offset-md-1 text-md-end text-center pt-3">
+          <p class="text-white fs-5 mb-1"> GET THE NEW SUGAR APP TODAY!</p>
+          <p class="text-secondary "> Tap into a better shopping experience. </p>
+        </div>
+        <div
+          class="col-md-4 align-items-center d-flex gap-2 justify-content-center justify-content-md-start mb-3  mb-md-0 play-icon">
+          <img src="/sugar-img/playstore.png" height="35px" alt="">
+          <img src="/sugar-img/apple-store.png" height="35px" alt="">
+        </div>
+        <hr style="color: white; width: 90%; margin: auto; height: 3px; background-color: white;">
+        <div class="col-12 text-center p-2">
+          Copyright © 2022 SUGAR Cosmetics. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scriptpart -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="273px" height="64px" viewBox="0 0 273 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Image 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Image-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13">
+            <g id="Group-12" transform="translate(44.000000, 7.000000)" fill="#FFFFFF" fill-opacity="0.5" fill-rule="nonzero">
+                <polygon id="Path-Copy-4" opacity="0.400000006" points="225.0025 4.330625 223 0 220.9975 4.330625 217 6.5 220.9975 8.669375 223 13 225.0025 8.669375 229 6.5"></polygon>
+                <g id="Group-11" transform="translate(24.000000, 26.500000) scale(1, -1) translate(-24.000000, -26.500000) translate(0.000000, 2.000000)" opacity="0.800000012">
+                    <polygon id="Path-Copy-6" points="4.00125 1.99875 3 0 1.99875 1.99875 0 3 1.99875 4.00125 3 6 4.00125 4.00125 6 3"></polygon>
+                    <polygon id="Path-Copy-7" points="46.00125 44.99875 45 43 43.99875 44.99875 42 46 43.99875 47.00125 45 49 46.00125 47.00125 48 46"></polygon>
+                </g>
+                <circle id="Oval-Copy-3" opacity="0.600000024" cx="191.5" cy="46.5" r="1.5"></circle>
+                <circle id="Oval-Copy-5" opacity="0.600000024" cx="151.5" cy="6.5" r="1.5"></circle>
+                <polygon id="Path-Copy-3" opacity="0.400000006" points="99.66875 31.664375 98 28 96.33125 31.664375 93 33.5 96.33125 35.335625 98 39 99.66875 35.335625 103 33.5"></polygon>
+            </g>
+            <rect id="Rectangle" x="0" y="0" width="273" height="64"></rect>
+        </g>
+    </g>
+</svg>

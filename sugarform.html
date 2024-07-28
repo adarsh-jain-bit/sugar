@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SugarForm</title>
+  <link rel="stylesheet" href="sugarform.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- bottom navbar -->
+  <div id="bottomnav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+
+          <div class="nav d-md-none">
+            <a href="/index.html" target="_blank" class="nav__link"> <i class="fa-solid fa-home pb-1"></i>Home</a>
+            <a href="#" class="nav__link"> <i class="fa-solid fa-grip  pb-1"></i>Categories</a>
+            <a href="/sugar.cart.html" target="_blank" class="nav__link"> <i
+                class="fa-solid fa-shopping-cart pb-1"></i>Cart</a>
+            <a href="/sugarform.html" target="_blank" class="nav__link"> <i
+                class="fa-regular fa-user  pb-1"></i>Account</a>
+            <a href="/sugarreward.html" class="nav__link"> <i class="fa-solid fa-gift  pb-1"></i>Rewards</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- toast -->
+  <div class="position-sticky top-0 " id="toast">
+    <div class="container-fluid ">
+      <div class="row  ">
+        <div class="col-md-6 col-8 text-end text-white p-2">
+          Get 3 Products For Rs 1199
+        </div>
+        <div class="col-md-6 col-4 text-end p-2 pe-4">
+
+          <button type="button" class="btn-close" onclick="closebutton()" aria-label="Close"></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-5 p-0">
+        <img src="/sugar-img/form- banner.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-md-7 p-5" id="background-texture">
+        <div class="box py-5 px-4 px-sm-3 px-md-0 bg-white rounded-5 ">
+          <div class="row offset-md-1 justify-content-md-start justify-content-evenly">
+            <div class="col-6 pe-1">
+              <button type="button" onclick="signup()" class="btn btn-dark d-block w-100 rounded-0  btn-self">Sign
+                Up</button>
+            </div>
+            <div class="col-6 p-0">
+              <button type="button" class="btn btn-dark d-block w-100 rounded-0 btn-self"
+                onclick="login()">Login</button>
+            </div>
+          </div>
+          <form action="#">
+            <div class="input-box offset-md-1 " id="inputbox">
+              <div class="col-md-10 text-center py-4 py-md-2">
+                <h2 class="sign fs-1">Sign-up</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Name">
+                    <label for="floatingInput">First Name*</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Enter Your Name">
+                    <label for="floatingInput">Last Name*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Name">
+                    <label for="floatingInput">Email*</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingInput" placeholder="Enter Your Name">
+                    <label for="floatingInput">Phone Number*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option selected>States</option>
+                      <option value="1">MAdhya Pradesh</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Kashmir</option>
+                      <option value="3">Punjab</option>
+                      <option value="3">Uttar Pradesh</option>
+                    </select>
+                    <label for="floatingSelect">Works with selects</label>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="City">
+                    <label for="floatingInput">City*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="adddres">
+                    <label for="floatingInput">Address*</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-sm-10 col-12">
+                  <div class="d-flex justify-content-md-start justify-content-center">
+                    <button type="submit" name="" id="" class="btn btn-self text-white px-4 me-3">Submit</button>
+                    <button type="reset" name="" id="" class="btn btn-self text-white px-4">reset</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+          <div class="inputbox2 offset-md-1" id="inputbox2">
+            <div class="col-md-10 text-center py-4 py-md-2">
+              <h2 class="sign fs-1">Login</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating position-relative">
+                  <input type="password" class="form-control" id="Password" placeholder="Password"><i
+                    class="fa-solid fa-eye-slash eye fs-5" id="eye-icon" onclick="eye()"></i>
+                  <label for="Password">Password</label>
+                </div>
+                <a name="" id="" class="btn btn-self text-white mt-3 d-block m-auto w-25" href="#"
+                  role="button">Login</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scriptpart -->
+
+  <script>
+    let toast = document.getElementById('toast')
+
+    function closebutton() {
+      toast.style.display = "none"
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="/sugarfom.js"></script>
+</body>
+
+</html>

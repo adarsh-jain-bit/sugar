@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html,body{
+    overflow-x: hidden;
+}
+.nav-fix{
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    z-index: 100000!important;
+    width: 100%!important;
+}
+#bestseller2{
+    background: url(/sugar-img/form-banner-texture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#shopnow{
+    background-color: whitesmoke!important;
+    margin-top: 200px;
+}
+#staytouch{
+    background: url(/sugar-img/form-banner-texture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.btn-color{
+    background-color: black!important;
+    color: white !important;
+}
+#contact img{
+    filter: invert(100%);
+}
+.social-icon{
+    font-size: 25px;
+}
+.social-icon i:hover{
+    color: white!important;
+}
+.play-icon{
+ filter: invert(100%);
+}
+/* -----------toast------------- */
+#toast{
+    background-color: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  
+}
+/* bottom nav */
+
+.nav{
+    height: 50px; 
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+  display: flex!important;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(109, 99, 99, 0.2);
+  z-index: 10000;
+  justify-content: space-around;
+ }
+ .nav__link{
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     display: flex !important;
+     flex-direction: column!important;
+     text-align: center;
+ }
+ .nav__link:hover{
+    color: rgb(223, 88, 110)!important;
+ }
+ .nav--hidden{
+     transform: translateY(-50px);
+ }
+ @media (max-width:764px) {
+    #shopnow{
+        margin-top: 100px!important;
+    }
+ }
+
+@media (max-width:500px){
+  .nav__link{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0px;
+  }
+}
